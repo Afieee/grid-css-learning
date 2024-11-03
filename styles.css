@@ -254,7 +254,7 @@ body{
     }
     .wrapper-nav-3 .item-last-nav-3 {
         grid-column: 1 / -1; 
-        width: 250px;
+        width: 300px;
         height: 50px;
         border-radius: 8px;
         justify-self: center;
