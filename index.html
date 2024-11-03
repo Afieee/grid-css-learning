@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="nav-1">
+        <div class="wrapper-nav-1-kiri">
+            <a href="" class="isi-nav-kiri1">Cara Download</a>
+            <a href="" class="isi-nav-kiri2">DMCA</a>
+        </div>
+
+        <div class="wrapper-nav-1-kanan">
+            <a href="" class="isi-nav-kanan1">LAPORAN LINK</a>
+            <a href="" class="isi-nav-kanan2">GRUP FB</a>
+        </div>
+    </nav>
+
+    <nav class="nav-2">
+        <a href="">
+            <img src="images/otakudesu-logo.png" alt="Logo" width="200px" height="170px">
+        </a>
+    </nav>
+
+    <nav class="nav-3">
+        <div class="wrapper-nav-3">
+            <a href="#" class="isi-nav3" onclick="loadContent('home')">HOME</a>
+            <a href="#" class="isi-nav3" onclick="loadContent('anime-list')">ANIME LIST</a>
+            <a href="#" class="isi-nav3" onclick="loadContent('jadwal-rilis')">JADWAL RILIS</a>
+            <a href="#" class="isi-nav3" onclick="loadContent('on-going')">ON-GOING ANIME</a>
+            <a href="#" class="isi-nav3" onclick="loadContent('genre-list')">GENRE LIST</a>
+            <a href="#" class="isi-nav3" onclick="loadContent('fanpage')">FANPAGE</a>
+            <input type="search" placeholder="Search Anime..." class="item-last-nav-3">
+        </div>
+    </nav>
+    
+    <div id="main-content" class="main-content">
+        <nav class="top-1">
+            <b class="text-top-1"> Situs Resmi Otakudesu hanya otakudesu.xxx, selain dari ini adalah situs palsu </b>
+        </nav>
+        <main class="animes">
+            <a href="" class="anime">
+                <img src="images/frieren-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/clannad-poster.jpg" alt="" class="anime-item">
+
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/haruhi-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/86-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/aria-poster.jpg" alt="" class="anime-item">
+            </a>
+            <a href="" class="anime">
+                <img src="images/hibike-euphonium-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/onepiece-poster.jpg" alt="" class="anime-item">
+
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/k-on-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/3-gatsu-no-lion-poster.jpg" alt="" class="anime-item">
+            </a>
+
+            <a href="" class="anime">
+                <img src="images/violet-evergarden-poster.jpg" alt="" class="anime-item">
+            </a>
+        </main>
+    </div>
+
+
+    <script>
+        function loadContent(page) {
+            const content = {
+                'home': ` 
+                <center>
+                    <h1 style='color:white;'>
+                        Welcome to Home
+                    </h1>
+                    <p style='color:white;'>
+                        This is the home page content.
+                    </p>  `,
+// =========================================================================================
+                'anime-list': `
+                    <center>
+                    <h1 style="color:white;">
+                        Anime List
+                    </h1>
+                    <p style="color:white;">
+                        This is the anime list page content.
+                    </p>`,
+// =========================================================================================
+                'jadwal-rilis': `<center>
+                    <h1 style="color:white;">
+                        Jadwal Rilis 
+                    </h1>
+                    <p style="color:white;">
+                        This is the jadwal rilis page content.
+                    </p>`,
+// =========================================================================================
+                'on-going': `<center>
+                    <h1 style="color:white;">
+                        On-Going Anime
+                    </h1>
+                    <p style="color:white;">
+                        This is the on-going anime page content.
+                    </p>`,
+// =========================================================================================
+                'genre-list': `<center>
+                    <h1 style="color:white;">
+                        Genre List
+                    </h1><p style="color:white;">
+                        This is the genre list page content.
+                    </p>`,
+// =========================================================================================
+                'fanpage': `<center>
+                    <h1 style="color:white;">
+                        Fanpage
+                    </h1>
+                    <p style="color:white;">
+                        This is the fanpage content.
+                    </p>`,
+            };
+
+            // Update main-content with the selected page content
+            document.getElementById('main-content').innerHTML = content[page];
+        }
+    </script>
+</body>
+</html>
